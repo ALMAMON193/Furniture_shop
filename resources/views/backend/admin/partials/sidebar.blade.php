@@ -129,6 +129,28 @@
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarMultilevel2" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarMultilevel">
+                        <i class="ri-share-line"></i> <span data-key="t-multi-level">Multi Level</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarMultilevel2">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1"> Add Product </a>
+                            </li><li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1"> All Products </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1"> Add Auction Product </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1"> All Auction Products  </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
                 {{-- staff account management --}}
 {{--                <li class="nav-item {{ request()->routeIs('admin.staff.register.*') ? 'active' : '' }}">--}}
 {{--                    <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"--}}

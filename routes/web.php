@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Web\Backend\Admin\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,5 +25,7 @@ Route::middleware('auth')->group(function () {
 });
 
 //admin product controller
+Route::get('/admin/products', [ProductController::class, 'index'])->name('admin.products');
+Route::get('/admin/product/create', [ProductController::class, 'create'])->name('admin.product.create');
 
 require __DIR__ . '/auth.php';
